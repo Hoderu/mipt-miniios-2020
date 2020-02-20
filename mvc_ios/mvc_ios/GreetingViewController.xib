@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GreetingViewController" customModule="mvc_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="myButton" destination="IQo-T9-yjj" id="LBN-Gx-CU8"/>
+                <outlet property="myLabel" destination="XJ5-id-IQG" id="x5W-JR-F3y"/>
+                <outlet property="view" destination="zbw-J8-OaC" id="KAj-eT-VQ4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zbw-J8-OaC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQo-T9-yjj">
+                    <rect key="frame" x="184" y="438" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="xUJ-Ns-lGq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJ5-id-IQG">
+                    <rect key="frame" x="186" y="324" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="IQo-T9-yjj" firstAttribute="top" secondItem="XJ5-id-IQG" secondAttribute="bottom" constant="93" id="C5r-03-Sin"/>
+                <constraint firstItem="IQo-T9-yjj" firstAttribute="centerY" secondItem="94q-ws-LnC" secondAttribute="centerY" id="d6s-rF-JhB"/>
+                <constraint firstItem="IQo-T9-yjj" firstAttribute="centerX" secondItem="94q-ws-LnC" secondAttribute="centerX" id="eWY-6q-frd"/>
+                <constraint firstItem="XJ5-id-IQG" firstAttribute="centerX" secondItem="94q-ws-LnC" secondAttribute="centerX" id="rT4-2g-xag"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="94q-ws-LnC"/>
+            <point key="canvasLocation" x="-21" y="6"/>
+        </view>
+    </objects>
+</document>
